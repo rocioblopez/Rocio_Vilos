@@ -5,226 +5,323 @@
 
 
 .color__body{ 
-
-     background-color: $colorbody;
-     font-family:'Lato', sans-serif; 
-
+  background-color: $colorbody;
+  font-family:'Lato' sans-serif; 
 }
+
 
 
 #menu__completo{
-	
+  display:block;
   position: relative;
-  background: colorbody;
   width: 100%;
   position: fixed;
   z-index: 100;
- 
-    }
+  box-shadow: 0.5px -0.5px 4px $ColorTituloLateral;
+   background-color: $colorfondomenufooter;
+    border-bottom:solid 2px $colorMenu;
+ }
 
-
-#nosotros_formato{
-
- position: relative;
- background-color:#efefef;
- border: 0px;
+#menu--sombra{
+  background-color:$colorfondomenufooter;
 }
 
-
-.header__logo {
-	width: 100px;
-	align-content: center;
+#menu__estilo{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color:$colorMenu;
+  width: 100%;
+  padding: 20px 25px 10px 25px;
+  align-content: flex-end;
+  align-items: flex-end;
 }
-
-
-#menu__estilo {
-
-    display: inline-block;
-    position: relative;
-	text-decoration: none;
-	color:$colorMenu;
-	width: 100%;
-	padding: 20px 25px 10px 25px;
-	align-content: flex-end;
-	align-items: flex-end;
-
-	}
-
 
 #menu__estilo:hover{
-
-    position: relative;
-	text-decoration: none;
-	color: $colorSelect;
-	width: 100%;
-	padding: 20px 25px 10px 25px;
-	font-size: 17px;
-    
+  position: relative;
+  text-decoration: none;
+  color: $colorSelect;
+  width: 100%;
+  padding: 20px 25px 10px 25px;
+  font-size: 17px; 
 }
 
 .menu__desplegable{
-
-    position: relative;
-	text-decoration: none;
-	color:$colorMenu;
-	font-size: 14px;
-	padding: 10px 10px;
-
+  position: relative;
+  text-decoration: none;
+  color:$colorMenu;
+  font-size: 14px;
+  padding: 10px 10px;
 }
 
 .menu__desplegable:hover {
+  display:block;
+  position:relative;
+  text-decoration: none;
+  font-size: 15px;
+  color: $colorSelect;
+  line-decoration: underline;
+}
 
-    display:block;
-    position:relative;
-	text-decoration: none;
-	font-size: 15px;
-	color: $colorSelect;
-	line-decoration: underline;
-	}
+.header__logo{
+  width: 100px;
+}
+
+
+
+#footer--caracteristicas{
+  display:block;
+  position: relative;
+  background-color: $colorfondomenufooter;
+  border-top:solid 2px $colorMenu;
+  box-shadow: 0.5px 0.5px 2px $ColorTituloLateral;
+}
+
+#footer__iconos{
+  display:block;
+  position: relative;
+  align-content: center;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+}
+
+.footer__iconoindividual{
+  margin: 2px 25px 2px 25px;
+}
+
+.footer__texto{
+  diplay:block;
+  font-size:$DescripcionesChicas;
+  color: $colorDescripciones;
+  text-align: center;
+  margin:15px;
+} 
+
+#footer__texto2{
+  text-decoration:none;
+  color:$colorMenu;
+  font-size: $DescripcionesMuyChicas;
+  padding: 5px;
+}
+
+#footer__texto3{
+   @extend #footer__texto2;
+   text-decoration:underline;
+}
+
+
 
 .btn_inactivo{
-	
-	border: 0.5mm solid $colorMenu;
-	border-radius: 2MM;
-	color:$colorMenu;
+  border: 0.5mm solid $colorMenu;
+  border-radius: 2MM;
+  color:$colorMenu;
 }
-
 .btn_inactivo:hover{
-
-    border: 0.5mm solid $colorMenu;
-	border-radius: 2MM;
-	background-color: $colorMenu;
-	color:$textobotonesAct;
-	
+  border: 0.5mm solid $colorMenu;
+  border-radius: 2MM;
+  background-color: $colorMenu;
+  color:$textobotonesAct;
 }
-
 
 .btn_activo{
-	
-	border: 0.5mm solid $colorMenu;
-	border-radius: 2MM;
-	color: $colorSelect;
-	background-color:$colorMenu;
+  border: 0.5mm solid $colorMenu;
+  border-radius: 2MM;
+  color: $colorSelect;
+  background-color:$colorMenu;
 }
-
 .btn_activo:hover{
-
   border: 1px solid $colorSelect;
-  }
-
+}
 
 .btn_carro{
-	
-@extend.btn_inactivo;
-padding: 5px 10px 5px 10px;
-  
+  @extend.btn_inactivo;
+  padding: 5px 10px 5px 10px;
+  margin-left:10px;
 }
 
+#btn__carro2{
+
+  border: 0.5mm solid $colorMenu;
+  border-radius: 2mm;
+  background-color:$colorMenu;
+  color:$textobotonesAct;
+  padding: 5px 8px 5px 8px;
+  display:block;
+  position:relative;
+  align-content: center;
+  align-items: center;
+  text-align:center;
+  
+    }
+
+#btn__carro2:focus{
+  box-shadow: 0.5px 2px 10px $colorSelect;
+  text-decoration:none;
+  color:$textobotonesAct;
+}
+
+
+#btn__carro3{
+ border: 0.5mm solid $colorMenu;
+  border-radius: 2mm;
+  padding:5px 0px 5px 0px;
+  color:$textobotonesIna;
+  width:100px;
+  background-color:$backgrounselect;
+}
+
+
+#btn__buscar{
+  border: solid 1px $colorMenu;
+  border-radius: 1.5MM;
+  margin-right:3px;
+  height:35px;
+}
+#btn__buscar:focus{
+  box-shadow: 0.5px 2px 10px $colorSelect;
+}
 
 .btn_verdetalle{
-	
-@extend.btn_inactivo;
-color:$textobotonesIna;
-padding: 5px 10px 5px 10px;
-display:block;
-position:relative;
-align-content: center;
-align-items: center;
-text-align:center;
+  @extend.btn_inactivo;
+  color:$textobotonesIna;
+  padding: 5px 10px 5px 10px;
+  display:block;
+  position:relative;
+  align-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+#btn__dropdown{
+  position: relative;
+  left:25px;
+  padding:2px;
+  margin:5px 5px 5px 0px;
 
 }
 
-
-
-
-#espacio_carrusel{
-
-	padding: 50px 0px 50px 0px;
-	position: relative;
-	padding-top:70px;
-} 
 
 
 .tituloprincipal--caracteristicas{
-	
-	color: $Colortitulos;
-	font-size: $Titulos-size;
+  color: $Colortitulos;
+  font-size: $Titulos-size;
 }
 
 .titulolateral--caracteristicas{
-	
-	color:$ColorTituloLateral;
-	font-size:  $TituloLateral-size;
+  color:$ColorTituloLateral;
+  font-size:  $TituloLateral-size;
 }
 
 .titulosec--caracteristicas{
-	 
-	color: $ColorTituloSecundario;
-	font-size: $TitulosSecundarios;
-    padding-top: 25px;
+  color: $ColorTituloSecundario;
+  font-size: $TitulosSecundarios;
+  padding-top: 25px;
+}
 
+.titulotarjetas--caracteristicas{
+
+color: $ColorTituloSecundario;
+  font-size: $TitulosSecundarios;
+    }
+
+
+.titulotarjetas--caracteristicas2{
+  color: $ColorTituloSecundario;
+  font-size: $TitulosSecundarios;
+  margin:10px;
+  text-decoration:none;
+  
+}
+
+.texto__img{
+  background-color: $colorMenu;
+  padding:35px;
+  text-align: center;
+}
+
+#descripciones__chicas{
+  font-size:$DescripcionesChicas;
+  color: $ColorTituloSecundario;
 }
 
 $descripciones: grandes; 
 
-p1 {
-
-      @if $descripciones == grandes {
-             font-size:$DescripcionesGrandes;
-             color: $colorDescripciones;
-                      } 
-
-      @else if $descripciones == chico {
-             font-size:$DescripcionesChicas;
-     } 
-      }
-
-
-
-.Imag__Nosotros{
-	
-	border: 10px solid #48a998;
-}
+p1{
+  @if $descripciones == grandes{
+  font-size:$DescripcionesGrandes;
+  color: $colorDescripciones;
+} 
+  @else if $descripciones == chico{
+  font-size:$DescripcionesChicas;
+} 
 
 .tituloprincipalnosotros--caracteristicas{
-	
-	@extend.tituloprincipal--caracteristicas;
-
+  @extend.tituloprincipal--caracteristicas;
 }
-
-.texto__img{
-	
-background-color: $colorMenu;
-padding:35px;
-text-align: center;
 }
-
 
 p2{
-	
-font-size:$DescripcionesChicas;
-color: white;
+  font-size:$DescripcionesChicas;
+  color: white;
 }
 
 h5{
-	
-	color: white;
-	font-size: $TitulosSecundarios;
+  color: white;
+  font-size: $TitulosSecundarios;
 }
 
-.imagen--circulo{
-	
-width: 260px;
-border-radius: 130px;
-padding:50px;
+h4{
+  color:$ColorTituloLateral;
+}
 
-    display: inline-block;
-    position: relative;
+/* INDEX */
 
-	align-content: center;
-	align-items: center;
-	text-align: center;
+#espacio_carrusel{
+  padding: 50px 0px 50px 0px;
+  position: relative;
+  padding-top:70px;
+}
 
+#index__destacados{
+  background-color:$colorfondomenufooter;
+}
+
+
+
+#destacados__contenedor{
+  background-color: $colorbody;
+  box-shadow: 0 0 2px;
+  margin-bottom: 15px;
+
+}
+
+#destacados__contenedor:hover{
+  background-color:$colorfondomenufooter;
+  border:1px solid $textobotonesIna;
+  
+}
+
+#ofertas__contenedor{
+  background-color:$colorfondomenufooter;
+  dislpay: block;
+   position:relative;
+  margin-bottom: 25px;
+
+
+}
+
+@media only screen and (max-width:767px){
+  #ofertas__contenedor{
+  left:30%;
+  }
+
+}
+
+@media only screen and (max-width:1125px) and (min-width: 767px){
+  #ofertas__contenedor{
+  left:15%;
+  }
 
 }
 
@@ -232,137 +329,347 @@ padding:50px;
 /* Contactanos */
 
 #contactanos__formato{
-	
-position: relative;
-margin-top: 100px;
-
-
+  position: relative;
+  top: 100px;
+  left:25px;
 }
 
-
 .formulario__formato{
-
-  width: 250px; 
+  width: 300px; 
   height: 30px;
   transition:all 1s;
   margin-top: 10px;
+  border: solid 1px $colorMenu;
 }
-
 .formulario__formato:focus{
-
-  width: 300px;
+  width: 350px;
   height: 35px;
   font-size: 15px;
+  box-shadow: 0.5px 2px 10px $colorSelect;
 }
 
-
 .formulario__formato--espaciotexto{
-
   width: 300px; 
   height:150px;
   transition:all 1s;
   color: $ColorTituloSecundario;
+  border: solid 1px $colorMenu;
 }
 
 .formulario__formato--espaciotexto:focus{
-
-  width: 400px;
+  width: 350px;
   height: 250px;
   font-size: 15px;
   color: black;
+  box-shadow: 0.5px 2px 10px $colorSelect;
 }
 
-
-#botones__juntos{
-	display: block;
+.btn_formulario1{
+	display:inline-block;
 	position:relative;
-    content:50px 50px 50px 50px;
+	border: 0.5mm solid $colorMenu;
+	border-radius: 1.5MM;
+	color:$colorMenu;
+	padding: 2px 27px 2px 27px;
+	margin:0px 0px 10px 3px;
+}
+.btn_formulario1:hover{
+   box-shadow: 0.5px 2px 10px $colorSelect;
+}
 
+.btn_formulario2{
+  display:inline-block;
+  position:relative;
+  border: 0.5mm solid $colorMenu;
+  border-radius: 1.5MM;
+  color: $colorbody;
+  background-color:$colorMenu;
+  padding: 2px 48px 2px 48px;
+  margin:0px 3px 10px 0px;
+}
+.btn_formulario2:hover{
+  box-shadow: 0.5px 2px 10px $colorSelect;
+}
+  
+#botones__juntos{
+  display: block;
+  position: relative;
+  margin: 10px 10px 10px 3px;
+}
+
+#contactanos__agradecimiento{
+  display:block;
+  position: relative;
+  margin-top:100px;
+}
+
+#mapa__descripcion{
+  font-size:15px;
+  margin: 10px 10px 10px 0px;
+  width: 500px;
+  text-align: right;
+}
+
+#txt__agradecimiento{
+  position: relative;
+  font-style: oblique;
+  font-weight:300;
+  color: $ColorTituloSecundario;
+  text-align: center;
+  margin: 30px;
 }
 
 
-#wpp__formato{
+/* NOSOTROS */
 
+#nosotros__formato{
+  position: relative;
+  background-color:#efefef;
+  border: 0px;
+  margin-top: 80px;
+}
+
+#nosotros__img{
+   background-color: $colorbody;
+  position: absolute;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+   background-color: $colorbody;
+   opacity:0.8;
+
+  }
+
+@media only screen and (max-width: 900px) {
+  #nosotros__img{
+   display: inline-block;
+ position: relative;
+ z-index: 3;
+  opacity:1;
+
+  }}
+
+#nosotros__intro{
+background-color: $colorbody;
+padding:0px 5px 5px 5px;
+border: 1px solid $colorMenu;
+box-shadow: 5px 5px 10px $ColorTituloLateral;
+}
+
+@media only screen and (max-width: 900px) {
+   #nosotros__intro{
+
+   display: inline-block; 
+    position: relative;
+    background-color: $colorbody;
+    width: 100%;
+    top:120%;
+    height:100px;
+    z-index: 4;
+    padding:0;
+border: 0;
+box-shadow: none;
+
+  }
+}
+
+#nosotros_trio{
 display: inline-block;
-position: fixed;
-right: 180px;
-top: 88%;
-z-index: 20;
+position:relative;
+margin-top:35%;
+  }
 
-
-
- 
- 	
-}
-
-.img__wpp{
-
-width: 55px;
+#nosotros__circulos{
+    background-color: $colorbody;
+    display: inline-block;
+    position: relative;
+    margin-top:3%;
 
 }
 
-/* Vinilos Decorativos */
+.imagen--circulo{
+  width: 260px;
+  border-radius: 130px;
+  display: inline-block;
+  position: relative;
+  
+}
+
+.nosotros__imgs {
+ display: inline-block;
+ position: relative;
+  margin: 50px 80px 80px 80px;
+
+}
+
+.nosotros__img--caracteristicas {
+  border-radius: 180px; 
+  position: absolute;
+  left: 0;
+  height:220px;
+  width: 220px;
+  transition: opacity ease-in-out;
+  box-shadow: 5px 5px 10px $ColorTituloLateral;
+
+}
+
+#nosotros__img--efect:hover {
+ opacity: 0;
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;
+animation-duration: 1s;
+}
+
+.nosotros__texto{
+  display:inline-block;
+  position: relative;
+  margin:150px 10px 0px 10px;
+  
+}
+
+
+
+
+/*VINILOS DECORATIVOS */
 
 #vinilos__formato{
-	
-position: relative;
-margin-top: 100px;
+  position: relative;
+  margin-top: 100px;
+  left:25px;
+}
 
+#galeria__formato{
+ position: relative;
+ left:25px;
+ margin-top:28px;
 }
 
 .btn__dropdown{
-	
-	color:$colorbody;
-	background-color:$colorMenu;
-	border: solid $colorbody;
+  color:$colorbody;
+  background-color:$colorMenu;
+  border: solid $colorbody;
 }
 
-#tarjeta__formato{
-	
-	Display:inline-block;
-	position:relative;
-	margin:5px 5px 5px 5px;
-	align-content:center;
-}
+.texto--invisible {
+  display:none; 
+  transition: all .5s;
+  text-decoration:none;
+  text-size:$DescripcionesGrandes;
+  color:$colorDescripciones;
+  margin-left:10px;
+   }
 
+.texto--aparece:hover{ .texto--invisible {
+  display:block;
+  transition: all .5s;
+ 
+}}
 
-.titulotarjeta{
-	font-size: 30px;
-	margin-top:10px;
-	color:$Colortitulos;
-	  text-align:center;
-
-
-}
-
-
-#card-body{
-	
-height: 80 px;
-
-
-}
-
-#card-body:hover {
-	 
-     height: 250px;
+#link--sindeco{ 
+ text-decoration:none;
  }
 
+#destacados__contenedor2{
+   @extend #destacados__contenedor;
+   padding-bottom:8px;
+   margin-bottom:20px;
+
+   }
+
+#grupobtn__paginas{
+  position:relative;
+   margin: 0 auto;
+   left: 0;
+   right: 0;
+   width:310px;
+    }
 
 
-#desctipcion__efecto{
-	
-	opacity: 0;
-    filter: alpha(opacity=0);
-    transition: opacity 0.5s ease-in-out;
-    text-align:center;
+  #btnpaginas--formato{
+   @extend.btn_inactivo;
+   text-decoration:none;
+   color:$textobotonesIna;
+   margin:2px;
+   margin-top:50px;
+   margin-bottom:50px;
+
+  }
+ 
+ #relacionados--texto{
+ display: inline-block;
+ position: absolute;
+ background-color:$colorfondomenufooter;
+ width:150px;
+ height:150px;
+ margin-right:10px;  
+ }
+
+#titulo--peque{
+text-decoration:none;
+display:block;
+position:relative;
+margin-left:25px;
 }
 
-#desctipcion__efecto:hover {
-	 opacity: 1.0;
-    filter: alpha(opacity=100);
-    height: 80x;
-    background-color:white;
-  
+#texto--peque{
+ @extend #descripciones__chicas;
+ display: inline-block;
+ position:relative;
+ margin-left:25px;
+}
 
-     }
+#relacionados__tarjetas{
+margin-left: 25px;
+margin-right:25px;
+whidth:100%;
+}
+
+#tarjetas__inferiores{
+  display: inline-block;
+  position: relative;
+  margin: 10px 5px 10px 5px;
+}
+
+@media only screen and (max-width:765px) {
+#tarjetas__inferiores{
+  margin-left:30%;
+  }
+}
+
+#tarjetas__inferiores:hover{
+  box-shadow: 0.5px 2px 10px $colorSelect;
+}
+
+
+/*PRODUCTO*/
+
+#producto__formato{
+  position: relative;
+  left:25px;
+}
+
+
+
+#btn__producto{
+  @extend #btn__carro2;
+  font-size: $DescripcionesIntermedias;
+  height: 45px;
+  text-align: center;
+  margin: 50px 200px 15px 0px;
+ }
+
+#btn__producto2{
+   @extend .btn_verdetalle;
+  font-size:  $DescripcionesIntermedias;
+  height: 45px;
+  text-align: center;
+  margin: 5px 200px 0px 0px;
+   
+  }
+  .producto__iconos{
+  display:inline;
+  position:absolute;
+  width:15px;
+  margin-top: 10px;
+  }
